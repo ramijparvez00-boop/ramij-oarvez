@@ -35,23 +35,30 @@ function scrollToSection(id){
 
 const music = document.getElementById("music");
 const musicBtn = document.getElementById("musicBtn");
-let musicStarted = false;
 
-musicBtn.addEventListener("click", async () => {
+musicBtn.addEventListener("click", function () {
   if (music.paused) {
-    try { await music.play(); musicStarted = true; musicBtn.textContent = "❚❚"; }
-    catch(e) { alert("Add your own MP3 as assets/song.mp3, then tap the music button again."); }
+    music.play()
+      .then(() => {
+        musicBtn.textContent = "❚❚";
+      })
+      .catch((error) => {
+        console.error("Music error:", error);
+        alert("Song load nahi ho raha. assets/song.mp3 check karo.");
+      });
   } else {
     music.pause();
     musicBtn.textContent = "♪";
   }
 });
 
-document.body.addEventListener("click", async () => {
-  if (!musicStarted && music.querySelector("source").src) {
-    try { await music.play(); musicStarted = true; musicBtn.textContent = "❚❚"; } catch(e) {}
-  }
-}, {once:true});
+music.addEventListener("ended", function () {
+  musicBtn.textContent = "♪";
+});
+
+music.addEventListener("error", function () {
+  console.error("Audio file load nahi hui:", music.error);
+});
 
 document.getElementById("cakeBtn").addEventListener("click", () => {
   document.getElementById("flame").textContent = "✨";
