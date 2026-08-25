@@ -4,82 +4,263 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#130b16">
+
   <title>Happy Birthday, Nadra ❤️</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <div id="hearts"></div>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
       <div class="glow"></div>
+
       <p class="eyebrow">A little surprise from Rameez</p>
-      <h1>Happy Birthday,<br><span>Nadra ❤️</span></h1>
-      <p class="hero-text">Five years, countless memories, and a thousand reasons to smile.</p>
-      <button class="primary" onclick="scrollToSection('story')">Open Your Surprise ✨</button>
+
+      <h1>
+        Happy Birthday,<br>
+        <span>Nadra ❤️</span>
+      </h1>
+
+      <p class="hero-text">
+        Six years, countless memories, and a thousand reasons to smile.
+      </p>
+
+      <button class="primary" id="surpriseBtn">
+        Open Your Surprise ✨
+      </button>
+
       <div class="scroll">SCROLL TO BEGIN ↓</div>
     </section>
 
+
+    <!-- STORY -->
     <section id="story" class="section">
+
       <p class="eyebrow">OUR STORY</p>
-      <h2>Five Years of <span>Us</span></h2>
-      <p class="lead">Some stories are written in books. Ours is written in memories, laughter, little moments, and two hearts choosing each other again and again.</p>
+
+      <h2>
+        Six Years of <span>Us</span>
+      </h2>
+
+      <p class="lead">
+        Some stories are written in books. Ours is written in memories,
+        laughter, little moments, and two hearts choosing each other
+        again and again.
+      </p>
+
       <div class="timeline">
-        <article><span>01</span><h3>The Beginning</h3><p>Somewhere along the way, you became someone incredibly special to me. What started as a simple connection became a beautiful part of my life.</p></article>
-        <article><span>02</span><h3>Growing Together</h3><p>Five years gave us happy days, silly conversations, difficult moments and memories I would never trade for anything.</p></article>
-        <article><span>03</span><h3>All the Little Things</h3><p>It is not only the big moments I remember. It is the tiny jokes, random talks, smiles, and ordinary days that became extraordinary because of you.</p></article>
-        <article><span>04</span><h3>Still Choosing You</h3><p>After all this time, one thing remains simple: I am grateful that our paths crossed, and I hope we keep making beautiful memories together.</p></article>
+
+        <article>
+          <span>01</span>
+          <h3>The Beginning</h3>
+          <p>
+            Somewhere along the way, you became someone incredibly special
+            to me. What started as a simple connection became a beautiful
+            part of my life.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Growing Together</h3>
+          <p>
+            Six years gave us happy days, silly conversations, difficult
+            moments and memories I would never trade for anything.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>All the Little Things</h3>
+          <p>
+            It is not only the big moments I remember. It is the tiny jokes,
+            random talks, smiles, and ordinary days that became extraordinary
+            because of you.
+          </p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Still Choosing You</h3>
+          <p>
+            After all this time, one thing remains simple: I am grateful
+            that our paths crossed, and I hope we keep making beautiful
+            memories together.
+          </p>
+        </article>
+
       </div>
     </section>
 
+
+    <!-- SLIDESHOW -->
     <section class="section gallery-section">
+
       <p class="eyebrow">MEMORIES</p>
-      <h2>Moments I <span>Treasure</span></h2>
-      <div id="gallery" class="gallery"></div>
-      <p id="galleryNote" class="muted">Seven special memories, saved here forever. Tap any photo to view it larger.</p>
+
+      <h2>
+        Moments I <span>Treasure</span>
+      </h2>
+
+      <div class="slideshow">
+
+        <button class="slide-btn prev" id="prevBtn">‹</button>
+
+        <div class="slide-frame" id="slideFrame">
+          <img id="slideImage" src="" alt="Our beautiful memory">
+          <div class="slide-overlay">
+            <span id="slideCounter">1 / 7</span>
+          </div>
+        </div>
+
+        <button class="slide-btn next" id="nextBtn">›</button>
+
+      </div>
+
+      <div class="dots" id="dots"></div>
+
+      <p class="muted">
+        Our memories, one beautiful moment at a time. ❤️
+      </p>
+
     </section>
 
+
+    <!-- LETTER -->
     <section class="section letter">
+
       <div class="letter-card">
+
         <p class="eyebrow">A LETTER FOR YOU</p>
-        <h2>Dear <span>Nadra</span>,</h2>
-        <p>Happy Birthday to the person who has made so many chapters of my life brighter. Five years is not just a number to me; it is a collection of moments, conversations, laughter, lessons and memories that I will always keep close to my heart.</p>
-        <p>I hope today reminds you of how special you are. I hope you smile a little more, laugh a little louder, and feel surrounded by all the love and happiness you deserve.</p>
-        <p>Thank you for being part of my journey. Whatever the future brings, I will always be grateful for the beautiful memories we have created together.</p>
-        <p class="signature">With all my love,<br><strong>Rameez ❤️</strong></p>
+
+        <h2>
+          Dear <span>Nadra</span>,
+        </h2>
+
+        <p>
+          Happy Birthday to the person who has made so many chapters of my
+          life brighter. Six years is not just a number to me; it is a
+          collection of moments, conversations, laughter, lessons and
+          memories that I will always keep close to my heart.
+        </p>
+
+        <p>
+          I hope today reminds you of how special you are. I hope you smile
+          a little more, laugh a little louder, and feel surrounded by all
+          the love and happiness you deserve.
+        </p>
+
+        <p>
+          Thank you for being part of my journey. Whatever the future brings,
+          I will always be grateful for the beautiful memories we have
+          created together.
+        </p>
+
+        <p class="signature">
+          With all my love,<br>
+          <strong>Rameez ❤️</strong>
+        </p>
+
       </div>
+
     </section>
 
+
+    <!-- CAKE -->
     <section class="section cake-section">
+
       <p class="eyebrow">ONE MORE SURPRISE</p>
-      <h2>Make a <span>Wish</span> 🎂</h2>
-      <div class="cake-wrap">
-        <div class="flame" id="flame">🔥</div>
-        <div class="cake"><div class="icing"></div><div class="cake-line"></div><div class="cake-line second"></div></div>
+
+      <h2>
+        Make a <span>Wish</span> 🎂
+      </h2>
+
+      <div class="cake-wrap" id="cakeWrap">
+
+        <div class="knife" id="knife">🔪</div>
+
+        <div class="candle">
+          <div class="candle-stick"></div>
+          <div class="flame" id="flame">🔥</div>
+        </div>
+
+        <div class="cake" id="cake">
+
+          <div class="cake-half left-half">
+            <div class="icing"></div>
+            <div class="cake-line"></div>
+            <div class="cake-line second"></div>
+          </div>
+
+          <div class="cake-half right-half">
+            <div class="icing"></div>
+            <div class="cake-line"></div>
+            <div class="cake-line second"></div>
+          </div>
+
+        </div>
+
         <div class="plate"></div>
+
       </div>
-      <button class="primary" id="cakeBtn">Cut the Cake 🎂</button>
+
+      <button class="primary" id="cakeBtn">
+        Cut the Cake 🎂
+      </button>
+
       <p id="wish" class="wish"></p>
+
     </section>
 
+
+    <!-- FINAL -->
     <section class="final">
+
       <div class="final-glow"></div>
+
       <p class="eyebrow">THE END? NEVER.</p>
+
       <h2>Forever & Always</h2>
-      <p>Happy Birthday, Nadra.</p>
-      <p class="big-heart">Rameez <span>♥</span> Nadra</p>
-      <p class="muted">Here's to every memory behind us and every beautiful moment still waiting for us.</p>
+
+      <p>
+        Happy Birthday, Nadra.
+      </p>
+
+      <p class="big-heart">
+        Rameez <span>♥</span> Nadra
+      </p>
+
+      <p class="muted">
+        Here's to every memory behind us and every beautiful moment
+        still waiting for us.
+      </p>
+
     </section>
+
   </main>
 
-  <audio id="music" loop preload="none">
+
+  <!-- MUSIC -->
+  <audio id="music" loop preload="auto">
     <source src="assets/song.mp3" type="audio/mpeg">
   </audio>
-  <button class="music" id="musicBtn" aria-label="Toggle music">♪</button>
+
+  <button class="music" id="musicBtn" aria-label="Toggle music">
+    ♪
+  </button>
+
 
   <script src="script.js"></script>
+
 </body>
 </html>
